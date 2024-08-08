@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 
 	let products = [];
@@ -39,16 +40,27 @@
 		);
 
 		const sentinel = document.querySelector('#sentinel');
-		observer.observe(sentinel);
+		if (sentinel) {
+			observer.observe(sentinel);
+		}
 	});
+
+	function handleProductClick(productId) {
+		goto(`/product/${productId}`);
+	}
 </script>
 
 <main class="container mx-auto p-4">
 	<h1 class="text-2xl font-bold mb-4">Products</h1>
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 		{#each products as product}
-			<div class="bg-gray-200 border rounded-lg shadow-lg p-4">
-				<div class="bg-gray-100">
+			<!-- svelte-ignore a11y_click_events_have_key_events -->
+			<!-- svelte-ignore a11y_no_static_element_interactions -->
+			<div
+				class="bg-[#31363F] border border-zinc-900 rounded-lg shadow-lg p-4 cursor-pointer"
+				on:click={() => handleProductClick(product.id)}
+			>
+				<div class="bg-[#31363F]">
 					<img
 						src={product.thumbnail}
 						alt={product.title}
@@ -62,3 +74,9 @@
 	</div>
 	<div id="sentinel" class="h-1"></div>
 </main>
+
+<style>
+	main {
+		background-color: transparent;
+	}
+</style>
