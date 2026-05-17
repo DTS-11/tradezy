@@ -19,22 +19,24 @@ importers:
         version: 0.2.1(tailwindcss@3.4.4)
     devDependencies:
       '@sveltejs/adapter-auto':
-        specifier: ^3.0.0
-        version: 3.2.2(@sveltejs/kit@2.53.3(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.55.7)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5)))(svelte@5.55.7)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5)))
+        specifier: ^3.2.2
+        version: 3.2.2(@sveltejs/kit@2.53.3(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.53.5)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5)))(svelte@5.53.5)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5)))
       '@sveltejs/kit':
         specifier: ^2.53.3
         version: 2.53.3(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.55.7)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5)))(svelte@5.55.7)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^3.0.0
         version: 3.1.1(svelte@5.55.7)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5))
+        specifier: ^3.1.1
+        version: 3.1.1(svelte@5.53.5)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5))
       '@types/eslint':
-        specifier: ^8.56.7
+        specifier: ^8.56.10
         version: 8.56.10
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.5.10)
       eslint:
-        specifier: ^9.0.0
+        specifier: ^9.5.0
         version: 9.5.0
       eslint-config-prettier:
         specifier: ^9.1.0
@@ -42,18 +44,22 @@ importers:
       eslint-plugin-svelte:
         specifier: ^2.36.0
         version: 2.41.0(eslint@9.5.0)(svelte@5.55.7)
+        specifier: ^2.41.0
+        version: 2.41.0(eslint@9.5.0)(svelte@5.53.5)
       globals:
-        specifier: ^15.0.0
+        specifier: ^15.6.0
         version: 15.6.0
       postcss:
         specifier: ^8.5.10
         version: 8.5.10
       prettier:
-        specifier: ^3.1.1
+        specifier: ^3.3.2
         version: 3.3.2
       prettier-plugin-svelte:
         specifier: ^3.1.2
         version: 3.2.5(prettier@3.3.2)(svelte@5.55.7)
+        specifier: ^3.2.5
+        version: 3.2.5(prettier@3.3.2)(svelte@5.53.5)
       svelte:
         specifier: ^5.55.7
         version: 5.55.7
@@ -649,8 +655,8 @@ packages:
     resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
     engines: {node: '>=0.10.0'}
 
-  devalue@5.6.3:
-    resolution: {integrity: sha512-nc7XjUU/2Lb+SvEFVGcWLiKkzfw8+qHI7zn8WYXKkLMgfGSHbgCEaR6bJpev8Cm6Rmrb19Gfd/tZvGqx9is3wg==}
+  devalue@5.8.1:
+    resolution: {integrity: sha512-4CXDYRBGqN+57wVJkuXBYmpAVUSg3L6JAQa/DFqm238G73E1wuyc/JhGQJzN7vUf/CMphYau2zXbfWzDR5aTEw==}
 
   devalue@5.8.1:
     resolution: {integrity: sha512-4CXDYRBGqN+57wVJkuXBYmpAVUSg3L6JAQa/DFqm238G73E1wuyc/JhGQJzN7vUf/CMphYau2zXbfWzDR5aTEw==}
@@ -1685,7 +1691,7 @@ snapshots:
       '@types/cookie': 0.6.0
       acorn: 8.16.0
       cookie: 0.6.0
-      devalue: 5.6.3
+      devalue: 5.8.1
       esm-env: 1.2.2
       kleur: 4.1.5
       magic-string: 0.30.21
@@ -1860,7 +1866,7 @@ snapshots:
 
   deepmerge@4.3.1: {}
 
-  devalue@5.6.3: {}
+  devalue@5.8.1: {}
 
   devalue@5.8.1: {}
 
