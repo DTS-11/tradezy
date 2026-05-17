@@ -19,40 +19,40 @@ importers:
         version: 0.2.1(tailwindcss@3.4.4)
     devDependencies:
       '@sveltejs/adapter-auto':
-        specifier: ^3.2.2
+        specifier: ^3.0.0
         version: 3.2.2(@sveltejs/kit@2.53.3(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.53.5)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5)))(svelte@5.53.5)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5)))
       '@sveltejs/kit':
         specifier: ^2.53.3
         version: 2.53.3(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.53.5)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5)))(svelte@5.53.5)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5))
       '@sveltejs/vite-plugin-svelte':
-        specifier: ^3.1.1
+        specifier: ^3.0.0
         version: 3.1.1(svelte@5.53.5)(vite@6.4.2(jiti@1.21.6)(yaml@2.4.5))
       '@types/eslint':
-        specifier: ^8.56.10
+        specifier: ^8.56.7
         version: 8.56.10
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.5.10)
       eslint:
-        specifier: ^9.5.0
+        specifier: ^9.0.0
         version: 9.5.0
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@9.5.0)
       eslint-plugin-svelte:
-        specifier: ^2.41.0
+        specifier: ^2.36.0
         version: 2.41.0(eslint@9.5.0)(svelte@5.53.5)
       globals:
-        specifier: ^15.6.0
+        specifier: ^15.0.0
         version: 15.6.0
       postcss:
         specifier: ^8.5.10
         version: 8.5.10
       prettier:
-        specifier: ^3.3.2
+        specifier: ^3.1.1
         version: 3.3.2
       prettier-plugin-svelte:
-        specifier: ^3.2.5
+        specifier: ^3.1.2
         version: 3.2.5(prettier@3.3.2)(svelte@5.53.5)
       svelte:
         specifier: ^5.53.5
@@ -286,9 +286,6 @@ packages:
     resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
     engines: {node: '>=6.0.0'}
 
-  '@jridgewell/sourcemap-codec@1.4.15':
-    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
-
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
 
@@ -488,9 +485,6 @@ packages:
 
   '@types/eslint@8.56.10':
     resolution: {integrity: sha512-Shavhk87gCtY2fhXDctcfS3e6FdxWkCx1iUZ9eEUbh7rTqlZT0/IzOkCOVt0fCjcFuZ9FPYfuezTBImfHCDBGQ==}
-
-  '@types/estree@1.0.5':
-    resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -950,9 +944,6 @@ packages:
   lru-cache@10.3.0:
     resolution: {integrity: sha512-CQl19J/g+Hbjbv4Y3mFNNXFEL/5t/KCg8POCuUqd4rMKjGG+j1ybER83hxV58zL+dFI1PTkt3GNFSHRt+d8qEQ==}
     engines: {node: 14 || >=16.14}
-
-  magic-string@0.30.10:
-    resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
 
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
@@ -1554,8 +1545,6 @@ snapshots:
 
   '@jridgewell/set-array@1.2.1': {}
 
-  '@jridgewell/sourcemap-codec@1.4.15': {}
-
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
   '@jridgewell/trace-mapping@0.3.31':
@@ -1699,7 +1688,7 @@ snapshots:
       debug: 4.3.5
       deepmerge: 4.3.1
       kleur: 4.1.5
-      magic-string: 0.30.10
+      magic-string: 0.30.21
       svelte: 5.53.5
       svelte-hmr: 0.16.0(svelte@5.53.5)
       vite: 6.4.2(jiti@1.21.6)(yaml@2.4.5)
@@ -1711,10 +1700,8 @@ snapshots:
 
   '@types/eslint@8.56.10':
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.8
       '@types/json-schema': 7.0.15
-
-  '@types/estree@1.0.5': {}
 
   '@types/estree@1.0.8': {}
 
@@ -1906,7 +1893,7 @@ snapshots:
   eslint-plugin-svelte@2.41.0(eslint@9.5.0)(svelte@5.53.5):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.5.0)
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.5
       eslint: 9.5.0
       eslint-compat-utils: 0.5.1(eslint@9.5.0)
       esutils: 2.0.3
@@ -2169,10 +2156,6 @@ snapshots:
   lodash.merge@4.6.2: {}
 
   lru-cache@10.3.0: {}
-
-  magic-string@0.30.10:
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.5
 
   magic-string@0.30.21:
     dependencies:
